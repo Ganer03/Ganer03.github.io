@@ -55,8 +55,8 @@
     </a>
     <br>
    <span>15) ссылки из прямоугольных и круглых областей картинки (HTML-тег map);</span>
-		<img src="https://megabook.ru/stream/mediapreview?Key=Фигура%20(геометрические%20фигуры)&Width=654&Height=654" width="200" alt="Geoms" usemap="#urls">
-		<map name="urls">
+		<img src="https://megabook.ru/stream/mediapreview?Key=Фигура%20(геометрические%20фигуры)&Width=654&Height=654" width="200" alt="Geoms" usemap="#unit">
+		<map name="unit">
 			<area shape="rect" coords="20,20,80,80" href="https://www.kubsu.ru/ru/university">
 			<area shape="circle" coords="142,84,38" href="https://www.kubsu.ru/ru/education">
 			<area shape="poly" coords="38,160,78,98,120,160" href="https://www.kubsu.ru/ru/science">
@@ -73,7 +73,54 @@
     <a href="/">20) сокращенную на главную;</a>
     <br>
     <a href="/page">21) сокращенную ссылку на внутреннюю.</a>
-    
+    <br>
+	<div id="form">
+		<h3>Форма должна содержать следующие поля:</h3>
+		<form action="URL_отправки_данных"method="POST">
+			<label>
+				Имя:
+				<input name="field-name"value="Иван"/>
+			</label>
+			<label>
+				Email:
+				<input name="field-email" value="test@example.com" type="email" />
+			</label>
+			<label>
+				Дата:
+				<input name="field-date" value="2022-09-12" type="date" />
+			</label>
+			Пол:
+			<label>
+				<input type="radio" checked="checked" name="radio-group-1" />
+				Мужской
+			</label>
+			<label>
+				<input type="radio" name="radio-group-1" />
+				Женский
+			</label>
+			Кол-во конечностей:
+			<label>
+				<input type="radio" checked="checked" name="radio-group-2" />
+				1
+			</label>
+			<label>
+				<input type="radio" name="radio-group-2" />
+				2
+			</label>
+			<label>
+				<input type="radio" name="radio-group-2" />
+				3
+			</label>
+			<label>
+				<input type="radio" name="radio-group-2" />
+				4
+			</label>
+			<label>
+				<input type="radio" name="radio-group-2" />
+				5
+			</label>
+
+	</div>
     
 </body>
 </html>
